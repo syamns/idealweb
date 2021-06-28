@@ -553,7 +553,7 @@ function ProcessExcel(data) {
 	var dvExcel = document.getElementById("ExcelTable");
 	dvExcel.innerHTML = "";
 	dvExcel.appendChild(table);
-	$("#ExcelTable table").addClass('table table-striped mt-1 table-responsive')
+	$("#ExcelTable table").addClass('table table-striped mt-1 table-responsive-lg table-responsive-sm')
 	$("#ExcelTable table thead").addClass('thead-dark')
 };
 
