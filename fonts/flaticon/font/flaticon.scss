@@ -1,0 +1,61 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?6dd9e65c6bcb662ed53b9a5cae7cb698") format("truetype"),
+url("./flaticon.woff?6dd9e65c6bcb662ed53b9a5cae7cb698") format("woff"),
+url("./flaticon.woff2?6dd9e65c6bcb662ed53b9a5cae7cb698") format("woff2"),
+url("./flaticon.eot?6dd9e65c6bcb662ed53b9a5cae7cb698#iefix") format("embedded-opentype"),
+url("./flaticon.svg?6dd9e65c6bcb662ed53b9a5cae7cb698#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "taxi-driver": "\f101",
+    "car-wash": "\f102",
+    "barbershop": "\f103",
+    "delivery-man": "\f104",
+    "tank": "\f105",
+    "carpenter": "\f106",
+    "light-bulb": "\f107",
+    "plumbing": "\f108",
+    "gift-box": "\f109",
+);
+
+.flaticon-taxi-driver:before {
+    content: map-get($flaticon-map, "taxi-driver");
+}
+.flaticon-car-wash:before {
+    content: map-get($flaticon-map, "car-wash");
+}
+.flaticon-barbershop:before {
+    content: map-get($flaticon-map, "barbershop");
+}
+.flaticon-delivery-man:before {
+    content: map-get($flaticon-map, "delivery-man");
+}
+.flaticon-tank:before {
+    content: map-get($flaticon-map, "tank");
+}
+.flaticon-carpenter:before {
+    content: map-get($flaticon-map, "carpenter");
+}
+.flaticon-light-bulb:before {
+    content: map-get($flaticon-map, "light-bulb");
+}
+.flaticon-plumbing:before {
+    content: map-get($flaticon-map, "plumbing");
+}
+.flaticon-gift-box:before {
+    content: map-get($flaticon-map, "gift-box");
+}
